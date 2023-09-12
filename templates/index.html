@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+</head>
+<body>
+    {% comment %} <div class="card m-5">
+        <div class="card-body">
+            {% if user.is_authenticated %}
+                <h2>Hi {{ user.username }}</h2>
+                <h4>Thank You</h4>
+            {% else %}
+                <h2>Hi Guest user!!</h2>
+                <h5>Please login to continue</h5>
+                <a href="/account/login/">Login</a>
+                <button type="submit">submit</button>
+            {% endif %}
+
+        </div> {% endcomment %}
+        <form method="POST" enctype="multipart/form-data">
+            <label>Upload File</label>
+            <input type="file" id="file" multiple>
+            <button>Submit Form</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script></script>
+</body>
+</html>
